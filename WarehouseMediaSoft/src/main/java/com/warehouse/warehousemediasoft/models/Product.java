@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.springframework.data.annotation.Id;
 
 import javax.xml.transform.sax.SAXResult;
 import java.math.BigDecimal;
@@ -17,6 +18,7 @@ public class Product {
 
     private static Integer idCounter = 0;
 
+    @Id
     private int id;
     private String name;
     private String category;
